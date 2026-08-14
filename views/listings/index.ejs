@@ -9,6 +9,10 @@
 
 <body>
     <h3>All Listings</h3>
+    <!-- here we are going to create a form for button that will send GET Request to /NEW -->
+     <form method="get" action="/listings/new">
+        <button>Create New Listing</button>
+     </form>
     <ul>
         <% for(let listing of allListings) { %>
             <li> <a href="/listings/<%= listing._id %>">
